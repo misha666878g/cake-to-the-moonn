@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cake Up - Магазин и коллекция</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="stars-container"></div>
+
+  <header>
+    <h1>Cake Up</h1>
+  </header>
+
+  <main>
+    <div id="current-cake-container">
+      <img id="current-cake" src="images/cake1.gif" alt="Текущий торт" />
+    </div>
+
+    <div id="currency-container">
+      <span>Звёздочки: </span><span id="currency-amount">0</span>
+    </div>
+
+    <div id="buttons-container">
+      <button id="btn-shop">Магазин</button>
+      <button id="btn-collection">Моя коллекция</button>
+    </div>
+  </main>
+
+  <!-- Модалка Магазина -->
+  <div id="modal-shop" class="modal hidden">
+    <div class="modal-content">
+      <button class="btn-close">&times;</button>
+      <h2>Магазин</h2>
+
+      <div id="shop-case">
+        <!-- Тут нарисуем кейс -->
+        <div id="case-image">🎁</div>
+        <div id="case-name">Золотой кейс</div>
+        <div id="case-price">Цена: 10 звёздочек</div>
+        <button id="btn-open-chest">Открыть кейс</button>
+      </div>
+
+      <div id="chest-result-container" class="hidden">
+        <!-- УДАЛЁН ЗОЛОТОЙ ЭФФЕКТ -->
+        <img id="chest-result" src="" alt="Выпавший торт" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Модалка Коллекции -->
+  <div id="modal-collection" class="modal hidden">
+    <div class="modal-content">
+      <button class="btn-close">&times;</button>
+      <h2>Моя коллекция</h2>
+      <div id="collection-list"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
